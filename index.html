@@ -3,115 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use Cases</title>
+    <title>Business Cases</title>
     <style>
+        /* Base styling for the body */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #fafafa; /* Light background color */
+            color: #333; /* Dark text color for readability */
             margin: 0;
             padding: 0;
-            line-height: 1.8;
-            color: #333;
-            padding-left: 60px;
-            padding-right: 60px;
+            line-height: 1.6;
         }
 
-        header.main-header {
-            background-color: #8A2BE2;
-            color: #FFFFFF;
-            padding: 1.5rem 0;
+        /* Header Styling */
+        header {
+            background-color: #5c6bc0; /* Soft blue background */
+            color: white;
             text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            margin-bottom: 2rem;
-        }
-
-        header.main-header h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 0.5rem;
-            color: #FFFFFF;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: white;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
         }
 
         h1 {
-            color: #6541f4;
-            text-align: center;
-            font-size: 2.5em;
-            letter-spacing: 1.2px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: normal; /* Normal weight for a clean look */
         }
 
+        /* Main container styling */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff; /* White background for content */
+            border-radius: 8px; /* Soft rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around content */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Button Styling */
         .btn {
-            display: block; /* Make buttons block-level so they take up full width */
-            background-color: #9630f6;
+            display: inline-block;
+            background-color: #7e57c2; /* Purple button color */
             color: white;
-            border: none;
-            padding: 15px 30px;
-            margin: 10px 0; /* Vertical margin between buttons */
-            font-size: 1.3rem;
-            border-radius: 10px;
-            cursor: pointer;
             text-decoration: none;
+            padding: 15px 30px;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
         }
 
         .btn:hover {
-            background-color: #7507f2b3;
-            transform: scale(1.05);
+            background-color: #5e35b1; /* Darker purple on hover */
+            transform: translateY(-3px); /* Slight lift on hover */
         }
 
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #6541f4;
-            color: white;
-            position: relative;
-            margin-top: 50px;
-            border-radius: 10px;
-            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4; /* Light gray footer background */
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
         }
 
         footer a {
-            color: #fff;
+            color: #5c6bc0; /* Blue link color */
             text-decoration: none;
-            font-weight: bold;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
 
-        /* Responsive styles */
+        /* Responsive styling for mobile devices */
         @media (max-width: 768px) {
             .container {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
 
             .btn {
-                font-size: 1.1rem; /* Smaller font on mobile */
-                padding: 12px 20px; /* Adjust padding */
+                font-size: 1rem; /* Adjust button font size for smaller screens */
+                padding: 12px 20px; /* Adjust padding for buttons */
             }
         }
     </style>
 </head>
 <body>
 
-<header class="main-header">
-    <h1>Business Cases</h1>
+<header>
+    <h1>Business Use Cases</h1>
 </header>
 
 <div class="container">
@@ -119,12 +117,14 @@
     <p>Click the buttons below to learn more about each business case:</p>
     <div>
         <a href="https://prajwalhurakadli.github.io/BusinessCase/" class="btn">Delivery Service Optimization</a>
-        <a href="https://prajwalhurakadli.github.io/BusinessCase-Agri/" class="btn">Agriculture Optimization</a>
+    </div>
+    <div>
+      <a href="https://prajwalhurakadli.github.io/BusinessCase-Agri/" class="btn">Agriculture Optimization</a>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 Business Cases</p>
+    <p>&copy; 2024 Business Cases | <a href="#">Privacy Policy</a></p>
 </footer>
 
 </body>
